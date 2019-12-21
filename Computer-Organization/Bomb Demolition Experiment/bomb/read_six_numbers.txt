@@ -1,0 +1,55 @@
+Dump of assembler code for function read_six_numbers:
+   0x00401ba8 <+0>:	addiu	sp,sp,-48
+   0x00401bac <+4>:	sw	ra,44(sp)
+   0x00401bb0 <+8>:	sw	s8,40(sp)
+   0x00401bb4 <+12>:	move	s8,sp
+   0x00401bb8 <+16>:	lui	gp,0x42
+   0x00401bbc <+20>:	addiu	gp,gp,-20080
+   0x00401bc0 <+24>:	sw	gp,32(sp)
+   0x00401bc4 <+28>:	sw	a0,48(s8)
+   0x00401bc8 <+32>:	sw	a1,52(s8)
+   0x00401bcc <+36>:	lw	a0,48(s8)
+   0x00401bd0 <+40>:	lui	v0,0x40
+   0x00401bd4 <+44>:	addiu	v1,v0,10280
+   0x00401bd8 <+48>:	lw	v0,52(s8)
+   0x00401bdc <+52>:	nop
+   0x00401be0 <+56>:	addiu	v0,v0,4
+   0x00401be4 <+60>:	lw	a1,52(s8)
+   0x00401be8 <+64>:	nop
+   0x00401bec <+68>:	addiu	t0,a1,8
+   0x00401bf0 <+72>:	lw	a1,52(s8)
+   0x00401bf4 <+76>:	nop
+   0x00401bf8 <+80>:	addiu	a3,a1,12
+   0x00401bfc <+84>:	lw	a1,52(s8)
+   0x00401c00 <+88>:	nop
+   0x00401c04 <+92>:	addiu	a2,a1,16
+   0x00401c08 <+96>:	lw	a1,52(s8)
+   0x00401c0c <+100>:	nop
+   0x00401c10 <+104>:	addiu	a1,a1,20
+   0x00401c14 <+108>:	sw	t0,16(sp)
+   0x00401c18 <+112>:	sw	a3,20(sp)
+   0x00401c1c <+116>:	sw	a2,24(sp)
+   0x00401c20 <+120>:	sw	a1,28(sp)
+   0x00401c24 <+124>:	move	a1,v1
+   0x00401c28 <+128>:	lw	a2,52(s8)
+   0x00401c2c <+132>:	move	a3,v0
+   0x00401c30 <+136>:	lw	v0,-32636(gp)
+   0x00401c34 <+140>:	nop
+   0x00401c38 <+144>:	move	t9,v0
+   0x00401c3c <+148>:	jalr	t9
+   0x00401c40 <+152>:	nop
+   0x00401c44 <+156>:	lw	gp,32(s8)
+   0x00401c48 <+160>:	slti	v0,v0,6
+   0x00401c4c <+164>:	beqz	v0,0x401c60 <read_six_numbers+184>
+   0x00401c50 <+168>:	nop
+   0x00401c54 <+172>:	jal	0x4021f0 <explode_bomb>
+   0x00401c58 <+176>:	nop
+   0x00401c5c <+180>:	lw	gp,32(s8)
+   0x00401c60 <+184>:	move	sp,s8
+   0x00401c64 <+188>:	lw	ra,44(sp)
+   0x00401c68 <+192>:	lw	s8,40(sp)
+   0x00401c6c <+196>:	addiu	sp,sp,48
+   0x00401c70 <+200>:	jr	ra
+   0x00401c74 <+204>:	nop
+End of assembler dump.
+

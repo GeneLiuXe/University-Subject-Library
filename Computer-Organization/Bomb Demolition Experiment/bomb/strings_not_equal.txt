@@ -1,0 +1,68 @@
+Dump of assembler code for function strings_not_equal:
+   0x00401cf8 <+0>:	addiu	sp,sp,-48
+   0x00401cfc <+4>:	sw	ra,44(sp)
+   0x00401d00 <+8>:	sw	s8,40(sp)
+   0x00401d04 <+12>:	move	s8,sp
+   0x00401d08 <+16>:	sw	a0,48(s8)
+   0x00401d0c <+20>:	sw	a1,52(s8)
+   0x00401d10 <+24>:	lw	a0,48(s8)
+   0x00401d14 <+28>:	jal	0x401c78 <string_length>
+   0x00401d18 <+32>:	nop
+   0x00401d1c <+36>:	sw	v0,36(s8)
+   0x00401d20 <+40>:	lw	a0,52(s8)
+   0x00401d24 <+44>:	jal	0x401c78 <string_length>
+   0x00401d28 <+48>:	nop
+   0x00401d2c <+52>:	sw	v0,32(s8)
+   0x00401d30 <+56>:	lw	v0,48(s8)
+   0x00401d34 <+60>:	nop
+   0x00401d38 <+64>:	sw	v0,28(s8)
+   0x00401d3c <+68>:	lw	v0,52(s8)
+   0x00401d40 <+72>:	nop
+   0x00401d44 <+76>:	sw	v0,24(s8)
+   0x00401d48 <+80>:	lw	v1,36(s8)
+   0x00401d4c <+84>:	lw	v0,32(s8)
+   0x00401d50 <+88>:	nop
+   0x00401d54 <+92>:	beq	v1,v0,0x401dc4 <strings_not_equal+204>
+   0x00401d58 <+96>:	nop
+   0x00401d5c <+100>:	li	v0,1
+   0x00401d60 <+104>:	b	0x401de4 <strings_not_equal+236>
+   0x00401d64 <+108>:	nop
+   0x00401d68 <+112>:	lw	v0,28(s8)
+   0x00401d6c <+116>:	nop
+   0x00401d70 <+120>:	lb	v1,0(v0)
+   0x00401d74 <+124>:	lw	v0,24(s8)
+   0x00401d78 <+128>:	nop
+   0x00401d7c <+132>:	lb	v0,0(v0)
+   0x00401d80 <+136>:	nop
+   0x00401d84 <+140>:	xor	v0,v1,v0
+   0x00401d88 <+144>:	sltu	v0,zero,v0
+   0x00401d8c <+148>:	andi	v0,v0,0xff
+   0x00401d90 <+152>:	lw	v1,28(s8)
+   0x00401d94 <+156>:	nop
+   0x00401d98 <+160>:	addiu	v1,v1,1
+   0x00401d9c <+164>:	sw	v1,28(s8)
+   0x00401da0 <+168>:	lw	v1,24(s8)
+   0x00401da4 <+172>:	nop
+   0x00401da8 <+176>:	addiu	v1,v1,1
+   0x00401dac <+180>:	sw	v1,24(s8)
+   0x00401db0 <+184>:	beqz	v0,0x401dc8 <strings_not_equal+208>
+   0x00401db4 <+188>:	nop
+   0x00401db8 <+192>:	li	v0,1
+   0x00401dbc <+196>:	b	0x401de4 <strings_not_equal+236>
+   0x00401dc0 <+200>:	nop
+   0x00401dc4 <+204>:	nop
+   0x00401dc8 <+208>:	lw	v0,28(s8)
+   0x00401dcc <+212>:	nop
+   0x00401dd0 <+216>:	lb	v0,0(v0)
+   0x00401dd4 <+220>:	nop
+   0x00401dd8 <+224>:	bnez	v0,0x401d68 <strings_not_equal+112>
+   0x00401ddc <+228>:	nop
+   0x00401de0 <+232>:	move	v0,zero
+   0x00401de4 <+236>:	move	sp,s8
+   0x00401de8 <+240>:	lw	ra,44(sp)
+   0x00401dec <+244>:	lw	s8,40(sp)
+   0x00401df0 <+248>:	addiu	sp,sp,48
+   0x00401df4 <+252>:	jr	ra
+   0x00401df8 <+256>:	nop
+End of assembler dump.
+

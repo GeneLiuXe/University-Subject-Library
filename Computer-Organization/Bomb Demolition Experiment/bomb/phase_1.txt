@@ -1,0 +1,23 @@
+Dump of assembler code for function phase_1:
+   0x00400d6c <+0>:	addiu	sp,sp,-32
+   0x00400d70 <+4>:	sw	ra,28(sp)
+   0x00400d74 <+8>:	sw	s8,24(sp)
+   0x00400d78 <+12>:	move	s8,sp
+   0x00400d7c <+16>:	sw	a0,32(s8)
+   0x00400d80 <+20>:	lw	a0,32(s8)
+   0x00400d84 <+24>:	lui	v0,0x40
+   0x00400d88 <+28>:	addiu	a1,v0,10092
+   0x00400d8c <+32>:	jal	0x401cf8 <strings_not_equal>
+   0x00400d90 <+36>:	nop
+   0x00400d94 <+40>:	beqz	v0,0x400da4 <phase_1+56>
+   0x00400d98 <+44>:	nop
+   0x00400d9c <+48>:	jal	0x4021f0 <explode_bomb>
+   0x00400da0 <+52>:	nop
+   0x00400da4 <+56>:	move	sp,s8
+   0x00400da8 <+60>:	lw	ra,28(sp)
+   0x00400dac <+64>:	lw	s8,24(sp)
+   0x00400db0 <+68>:	addiu	sp,sp,32
+   0x00400db4 <+72>:	jr	ra
+   0x00400db8 <+76>:	nop
+End of assembler dump.
+
